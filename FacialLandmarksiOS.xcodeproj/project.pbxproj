@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		20CE07A82160EA9800EEE181 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CE07A72160EA9800EEE181 /* AppDelegate.swift */; };
-		20CE07AA2160EA9800EEE181 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CE07A92160EA9800EEE181 /* ViewController.swift */; };
+		20CE07AA2160EA9800EEE181 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CE07A92160EA9800EEE181 /* CameraViewController.swift */; };
 		20CE07AD2160EA9800EEE181 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20CE07AB2160EA9800EEE181 /* Main.storyboard */; };
 		20CE07AF2160EA9900EEE181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20CE07AE2160EA9900EEE181 /* Assets.xcassets */; };
 		20CE07B22160EA9900EEE181 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20CE07B02160EA9900EEE181 /* LaunchScreen.storyboard */; };
+		20CE07BA2160EBA000EEE181 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CE07B92160EBA000EEE181 /* CameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		20CE07A42160EA9800EEE181 /* FacialLandmarksiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacialLandmarksiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20CE07A72160EA9800EEE181 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		20CE07A92160EA9800EEE181 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		20CE07A92160EA9800EEE181 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		20CE07AC2160EA9800EEE181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20CE07AE2160EA9900EEE181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20CE07B12160EA9900EEE181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20CE07B32160EA9900EEE181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20CE07B92160EBA000EEE181 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				20CE07A72160EA9800EEE181 /* AppDelegate.swift */,
-				20CE07A92160EA9800EEE181 /* ViewController.swift */,
+				20CE07A92160EA9800EEE181 /* CameraViewController.swift */,
 				20CE07AB2160EA9800EEE181 /* Main.storyboard */,
 				20CE07AE2160EA9900EEE181 /* Assets.xcassets */,
 				20CE07B02160EA9900EEE181 /* LaunchScreen.storyboard */,
 				20CE07B32160EA9900EEE181 /* Info.plist */,
+				20CE07B92160EBA000EEE181 /* CameraView.swift */,
 			);
 			path = FacialLandmarksiOS;
 			sourceTree = "<group>";
@@ -135,7 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20CE07AA2160EA9800EEE181 /* ViewController.swift in Sources */,
+				20CE07BA2160EBA000EEE181 /* CameraView.swift in Sources */,
+				20CE07AA2160EA9800EEE181 /* CameraViewController.swift in Sources */,
 				20CE07A82160EA9800EEE181 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +286,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FacialLandmarksiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,6 +295,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.FacialLandmarksiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,7 +305,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FacialLandmarksiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +314,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.FacialLandmarksiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
